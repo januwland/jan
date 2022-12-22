@@ -8,8 +8,22 @@
 e.load("2JDGrC6gj9CEieTM1teGWzrR8Xh","https://heyjanuwidz.dataplane.rudderstack.com"),
 e.page()}();
 </script>
+   
+<script>
+   
+   function trackForm(){
+rudderanalytics.track("Form Submitted")
+	}
+}
+function init(){
+    document.getElementById('form').onsubmit = trackForm;
+}
+window.onload = init;
+
+  </script>
     
   </head>
+ 
   <body>
     
     <h1>Hello World!</h1>
